@@ -1,1 +1,2 @@
-Diet
+# Diet
+Python script
