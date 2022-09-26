@@ -1,6 +1,6 @@
 def main():
     books = [] 
-    with open("Desktop/books.txt", "r") as file:
+    with open("Desktop/Books/books.txt", "r") as file:
         for line in file:
             books.append(line.rstrip())
     
