@@ -12,7 +12,7 @@ def main():
                 bprint(books)
                 continue
             elif dec == 2:
-                add(books)
+                add()
                 continue
             elif dec == 0:
                 print("Goodbye")
@@ -24,7 +24,7 @@ def main():
             print("Value not accepted")
             continue
 
-
+# To print the books alphabetically with their authors
 def bprint(books):
     books.clear()
     with open("Desktop/books.txt", "r") as file:
@@ -35,7 +35,8 @@ def bprint(books):
         book, author = item.split("/")
         print(f"{book} by {author}")
 
-def add(books):
+# To add a book to the list in the txt file
+def add():
     with open("Desktop/books.txt", "a") as file:
         book = input("What's the name? ").strip()
         author = input("Who's the author? ").strip()
