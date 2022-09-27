@@ -42,6 +42,5 @@ def add():
         author = input("Who's the author? ").strip()
         file.write(f"{book}/{author}\n")
         print("Item added")
-        
 
 main()
